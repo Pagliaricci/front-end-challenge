@@ -1,0 +1,156 @@
+.home-container {
+    background-image: url('../assets/eaters-collective-rS2OpgFbeMk-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header input {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.filters {
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.filters select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.view-toggle {
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.view-toggle button {
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.view-toggle button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.cocktail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cocktail-grid,
+.cocktail-list {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+}
+
+.cocktail-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.cocktail-list {
+    grid-template-columns: repeat(1, 1fr); /* Una sola columna para la vista en lista */
+}
+
+.cocktail-card {
+    background-color: #ffffff;
+    border-radius: 12px; /* Más redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra más sutil */
+    text-align: center;
+    padding: 20px; /* Aumenta el padding */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cocktail-list li {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 15%;
+    margin: 0 auto;
+}
+
+.cocktail-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.cocktail-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cocktail-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Espacio entre imagen y texto */
+}
+.cocktail-list img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.cocktail-card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+    text-decoration: none; /* Elimina el subrayado */
+    transition: color 0.3s ease;
+}
+
+.cocktail-list a {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #2c3e50;
+    font-weight: 600;
+    text-decoration: none; /* Quita el subrayado en ambas vistas */
+}
+
+.cocktail-list a:hover,
+.cocktail-card h3:hover {
+    color: #e74c3c; /* Color rojo en hover */
+}
+
+.cocktail-card a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del h3 */
+}
